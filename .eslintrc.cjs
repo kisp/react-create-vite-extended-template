@@ -1,6 +1,11 @@
 module.exports = {
   root: true,
   env: {browser: true, es2020: true},
+  globals: {
+    describe: 'readonly',
+    it: 'readonly',
+    cy: 'readonly',
+  },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
