@@ -1,0 +1,11 @@
+---
+test:
+  image: cypress/base:20.12.2
+  script:
+    - npm ci
+    - npm run test:ci
+    - npm run dev &
+    - npm run cypress:ci
+    - npm run lint
+    - npm run build
+    - npm run prettier:ci
