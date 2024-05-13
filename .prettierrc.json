@@ -3,5 +3,7 @@
   "bracketSpacing": false,
   "singleQuote": true,
   "trailingComma": "all",
-  "semi": false
+  "semi": false,
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindFunctions": ["clsx"]
 }
